@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="C:/CooCox/CoIDE\gcc\Sourcery G++ Lite\bin\arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -O0 -g3 -c -DSTM32F10X_MD_VL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F100RB -Icmsis -Icmsis_boot -Istm_lib\inc -Istm_lib -I.">
+      <target file="startup_stm32f10x_md_vl.o" lastModified="131f2dff088">
+         <source file="..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="131f286bf95"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="131f2dff059">
+         <source file="..\..\stm_lib\src\stm32f10x_tim.c" lastModified="131f286da03"/>
+      </target>
+      <target file="core_cm3.o" lastModified="131f2dff0e6">
+         <source file="..\..\cmsis\core_cm3.c" lastModified="131f286c003"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="131f2dff172">
+         <source file="..\..\cmsis_boot\system_stm32f10x.c" lastModified="131f286bfa5"/>
+      </target>
+      <target file="main.o" lastModified="131f2e9249c">
+         <source file="..\..\main.c" lastModified="131f2e91ed0"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="131f2dff1ff">
+         <source file="..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="131f286d550"/>
+      </target>
+      <target file="modbus_slave.o" lastModified="131f2e32342">
+         <source file="..\..\modbus_slave.c" lastModified="131f2e31a68"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="131f2dff385">
+         <source file="..\..\stm_lib\src\stm32f10x_usart.c" lastModified="131f286df72"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="131f2dff2da">
+         <source file="..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="131f286bdff"/>
+      </target>
+      <target file="misc.o" lastModified="131f2dff3e3">
+         <source file="..\..\stm_lib\src\misc.c" lastModified="131f286e6c5"/>
+      </target>
+   </processor>
+</history>
