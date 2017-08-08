@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.5.2 -O0 -nostartfiles -Map=discovery_modbus.map -mcpu=cortex-m3 -mthumb -LC:\CooCox\CoIDE\workspace\discovery_modbus --gc-sections -TC:\CooCox\CoIDE\workspace\discovery_modbus\link.ld -g">
+      <target file="discovery_modbus.elf" lastModified="131f2e92519">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="131f2dff059"/>
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="131f2dff088"/>
+         <source file="..\obj\core_cm3.o" lastModified="131f2dff0e6"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="131f2dff172"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="131f2dff1ff"/>
+         <source file="..\obj\main.o" lastModified="131f2e9249c"/>
+         <source file="..\obj\modbus_slave.o" lastModified="131f2e32342"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="131f2dff2da"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="131f2dff385"/>
+         <source file="..\obj\misc.o" lastModified="131f2dff3e3"/>
+      </target>
+   </processor>
+</history>

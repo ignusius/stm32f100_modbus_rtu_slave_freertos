@@ -32,7 +32,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
         </MemoryAreas>
-        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/discovery_modbus/link.ld" type="0"/>
+        <LocateLinkFile path="../../../../../coocox/coide/configuration/programdata/discovery_modbus/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -56,7 +56,7 @@
       <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="Type 0: Normal"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
@@ -78,35 +78,70 @@
     <Component id="458" name="USART" path="" type="2"/>
     <Component id="464" name="CMSIS Boot" path="" type="2"/>
     <Component id="467" name="MISC" path="" type="2"/>
+    <Component id="1135" name="FRT_FreeRTOS" path="" type="2"/>
   </Components>
   <Files>
     <File name="cmsis_boot/startup/startup_stm32f10x_md_vl.c" path="cmsis_boot/startup/startup_stm32f10x_md_vl.c" type="1"/>
-    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
     <File name="controller.h" path="controller.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/readme.txt" path="FRT_Library/FreeRTOS/Source/readme.txt" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" path="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
+    <File name="semihosting/sh_cmd.s" path="semihosting/sh_cmd.s" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/queue.c" path="FRT_Library/FreeRTOS/Source/queue.c" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/mpu_wrappers.h" path="FRT_Library/FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
+    <File name="semihosting/semihosting.c" path="semihosting/semihosting.c" type="1"/>
+    <File name="stm_lib/src/misc.c" path="stm_lib/src/misc.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/MemMang/heap_2.c" path="FRT_Library/FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
+    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS" path="" type="2"/>
+    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/include" path="" type="2"/>
+    <File name="FRT_Library" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/StackMacros.h" path="FRT_Library/FreeRTOS/Source/include/StackMacros.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/common.c" path="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/common.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
+    <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" path="FRT_Library/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_usart.h" path="stm_lib/inc/stm32f10x_usart.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/portable.h" path="FRT_Library/FreeRTOS/Source/include/portable.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
     <File name="stm_lib/inc/misc.h" path="stm_lib/inc/misc.h" type="1"/>
+    <File name="stdio" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/queue.h" path="FRT_Library/FreeRTOS/Source/include/queue.h" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
-    <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
-    <File name="cmsis_boot" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/semphr.h" path="FRT_Library/FreeRTOS/Source/include/semphr.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/readme.txt" path="FRT_Library/FreeRTOS/Source/portable/readme.txt" type="1"/>
     <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
-    <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
-    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
-    <File name="stm_lib/src/misc.c" path="stm_lib/src/misc.c" type="1"/>
-    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
-    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="semihosting" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/projdefs.h" path="FRT_Library/FreeRTOS/Source/include/projdefs.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source" path="" type="2"/>
+    <File name="FRT_Library/FreeRTOS/Source/tasks.c" path="FRT_Library/FreeRTOS/Source/tasks.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/croutine.c" path="FRT_Library/FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/task.h" path="FRT_Library/FreeRTOS/Source/include/task.h" type="1"/>
     <File name="stm_lib/src" path="" type="2"/>
     <File name="cmsis" path="" type="2"/>
     <File name="stm_lib" path="" type="2"/>
-    <File name="cmsis/core_cm3.c" path="cmsis/core_cm3.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/MemMang" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/FreeRTOS.h" path="FRT_Library/FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable/GCC" path="" type="2"/>
     <File name="modbus_slave.c" path="modbus_slave.c" type="1"/>
-    <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
-    <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/list.c" path="FRT_Library/FreeRTOS/Source/list.c" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/portable" path="" type="2"/>
+    <File name="semihosting/semihosting.h" path="semihosting/semihosting.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/list.h" path="FRT_Library/FreeRTOS/Source/include/list.h" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
-    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
-    <File name="stm_lib/inc/stm32f10x_usart.h" path="stm_lib/inc/stm32f10x_usart.h" type="1"/>
+    <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
+    <File name="FRT_Library/FreeRTOS/Source/include/croutine.h" path="FRT_Library/FreeRTOS/Source/include/croutine.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
   </Files>
 </Project>
